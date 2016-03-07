@@ -15,11 +15,11 @@
             <div class="row">
                 <div class="col-md-6">
                     <h3>My Blog Posts:</h3>
-                    <ul>
-                        <li><a href="/posts/blogpost1/">Blog Post 1</a></li>
-                        <li><a href="/posts/blogpost2/">Blog Post 2</a></li>
-                        <li><a href="/posts/blogpost3/">Blog Post 3</a></li>
-                    </ul>
+<ul>
+    <% posts.forEach(function(post) { %>
+        <li><a href = <%= "/posts/" + post %>><%= post %></a></li>
+    <% }); %>
+</ul>
             </div>
           </div>
         </div>
